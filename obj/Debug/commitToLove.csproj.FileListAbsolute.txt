@@ -1,0 +1,5 @@
+C:\Users\muminga\Documents\Wedding\commitToLove\bin\Debug\ClassLibrary.dll
+C:\Users\muminga\Documents\Wedding\commitToLove\bin\Debug\ClassLibrary.pdb
+C:\Users\muminga\Documents\Wedding\commitToLove\obj\Debug\commitToLove.csprojResolveAssemblyReference.cache
+C:\Users\muminga\Documents\Wedding\commitToLove\obj\Debug\ClassLibrary.dll
+C:\Users\muminga\Documents\Wedding\commitToLove\obj\Debug\ClassLibrary.pdb
