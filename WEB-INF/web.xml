@@ -35,4 +35,9 @@
 		<url-pattern>/enigma/questions/*</url-pattern>
 	</servlet-mapping>
 	
+	<welcome-file-list>
+	    <welcome-file>en/index.html</welcome-file>
+	    <welcome-file>it/index.html</welcome-file>
+	</welcome-file-list>
+	 
 </web-app>
