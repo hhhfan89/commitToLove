@@ -51,6 +51,7 @@
     <Content Include="css\preloader-default.css" />
     <Content Include="css\preloader.css" />
     <Content Include="css\style.css" />
+    <Content Include="en\index.html" />
     <Content Include="index.html" />
     <Content Include="js\bootstrap\bootstrap.js" />
     <Content Include="js\countdown\jquery.countdown-custom-label.js" />
