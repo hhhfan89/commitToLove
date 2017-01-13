@@ -53,6 +53,15 @@
     <Content Include="css\style.css" />
     <Content Include="en\index.html" />
     <Content Include="index.html" />
+    <Content Include="index_old.html" />
+    <Content Include="it\church.html" />
+    <None Include="it\sendEmail.php" />
+    <Content Include="it\rsvp.html" />
+    <Content Include="it\menu_otherPages.html" />
+    <Content Include="it\gift.html" />
+    <Content Include="it\index.html" />
+    <Content Include="it\location.html" />
+    <Content Include="it\menu_index.html" />
     <Content Include="js\bootstrap\bootstrap.js" />
     <Content Include="js\countdown\jquery.countdown-custom-label.js" />
     <Content Include="js\countdown\jquery.countdown.js" />
@@ -68,6 +77,7 @@
     <Content Include="js\modernizr\modernizr.js" />
     <Content Include="js\owlcarousel\owl.carousel.js" />
     <Content Include="js\pace\pace.min.js" />
+    <Content Include="js\rsvp\rsvp.js" />
     <Content Include="js\script.js" />
     <Content Include="js\smoothscroll\jquery.smooth-scroll.js" />
     <Content Include="js\stellar\jquery.stellar.js" />
@@ -168,6 +178,15 @@
     <None Include=".git\objects\fe\16a3dbb9720c642e48e68a10f364e8d5772758" />
     <None Include=".git\refs\heads\master" />
     <None Include=".git\refs\remotes\origin\master" />
+    <None Include="css\fonts\flexslider\flexslider-icon.eot" />
+    <None Include="css\fonts\flexslider\flexslider-icon.svg" />
+    <None Include="css\fonts\flexslider\flexslider-icon.ttf" />
+    <None Include="css\fonts\flexslider\flexslider-icon.woff" />
+    <None Include="css\fonts\fontello\font\fontello.eot" />
+    <None Include="css\fonts\fontello\font\fontello.svg" />
+    <None Include="css\fonts\fontello\font\fontello.ttf" />
+    <None Include="css\fonts\fontello\font\fontello.woff" />
+    <None Include="css\fonts\fontello\font\fontello.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\objects\info\" />
