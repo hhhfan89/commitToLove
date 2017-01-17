@@ -69,3 +69,8 @@
   -ms-transform: translate3d(0,0,0);
 }
 
+/* SDV: Aggiunta per centrare i box della lista nozze*/
+.owl-wrapper {
+    width: 67% !important;
+    margin: 0 auto;
+}
