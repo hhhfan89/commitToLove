@@ -51,10 +51,16 @@
     <Content Include="css\preloader-default.css" />
     <Content Include="css\preloader.css" />
     <Content Include="css\style.css" />
+    <Content Include="en\church.html" />
+    <Content Include="en\gift.html" />
     <Content Include="en\index.html" />
+    <Content Include="en\location.html" />
+    <Content Include="en\menu_otherPages.html" />
+    <Content Include="en\rsvp.html" />
     <Content Include="index.html" />
     <Content Include="index_old.html" />
     <Content Include="it\church.html" />
+    <None Include="en\sendEmail.php" />
     <None Include="it\sendEmail.php" />
     <Content Include="it\rsvp.html" />
     <Content Include="it\menu_otherPages.html" />

@@ -1989,7 +1989,7 @@ a:hover .de-icon.effect3{
 }
 
 .photo-item .layer.hidden-black-overlay{
-	background-color: rgba(0, 0, 0, 1);       /* SDV, 17/01: prima era "background-color: rgba(0, 0, 0, 0.4);"  */
+	background-color: rgba(0, 0, 0, 0.4);       /* SDV, 17/01: prima era "background-color: rgba(0, 0, 0, 0.4);"  */
 	opacity: 0; 
 }
 
