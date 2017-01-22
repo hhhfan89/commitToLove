@@ -60,6 +60,8 @@
     <Content Include="index.html" />
     <Content Include="index_old.html" />
     <Content Include="it\church.html" />
+    <None Include="css\fonts\adios_script_pro_all-webfont.woff" />
+    <None Include="css\fonts\adios_script_pro_all-webfont.woff2" />
     <None Include="en\sendEmail.php" />
     <None Include="it\sendEmail.php" />
     <Content Include="it\rsvp.html" />
