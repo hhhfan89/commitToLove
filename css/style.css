@@ -525,11 +525,11 @@ img.with-border{
 }
 
 .last-child-margin{
-	margin-right:0px;
+	margin-right:300px;
 }
 
 .split-margin{
-	margin-left:80px;
+	margin-left:-200px;
 }
 
 /* ----------------------------------------------*/
