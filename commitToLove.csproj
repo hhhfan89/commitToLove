@@ -59,6 +59,7 @@
     <Content Include="en\rsvp.html" />
     <Content Include="index.html" />
     <Content Include="index_old.html" />
+    <Content Include="it\location.html" />
     <Content Include="it\church.html" />
     <None Include="css\fonts\adios_script_pro_all-webfont.woff" />
     <None Include="css\fonts\adios_script_pro_all-webfont.woff2" />
@@ -68,7 +69,7 @@
     <Content Include="it\menu_otherPages.html" />
     <Content Include="it\gift.html" />
     <Content Include="it\index.html" />
-    <Content Include="it\location.html" />
+    <Content Include="it\location_old.html" />
     <Content Include="it\menu_index.html" />
     <Content Include="js\bootstrap\bootstrap.js" />
     <Content Include="js\countdown\jquery.countdown-custom-label.js" />

@@ -3,8 +3,3 @@ C:\Users\muminga\Documents\Wedding\commitToLove\bin\Debug\ClassLibrary.pdb
 C:\Users\muminga\Documents\Wedding\commitToLove\obj\Debug\commitToLove.csprojResolveAssemblyReference.cache
 C:\Users\muminga\Documents\Wedding\commitToLove\obj\Debug\ClassLibrary.dll
 C:\Users\muminga\Documents\Wedding\commitToLove\obj\Debug\ClassLibrary.pdb
-D:\Users\sdivito\Documents\Visual Studio 2015\Projects\commitToLove\bin\Debug\ClassLibrary.dll
-D:\Users\sdivito\Documents\Visual Studio 2015\Projects\commitToLove\bin\Debug\ClassLibrary.pdb
-D:\Users\sdivito\Documents\Visual Studio 2015\Projects\commitToLove\obj\Debug\commitToLove.csprojResolveAssemblyReference.cache
-D:\Users\sdivito\Documents\Visual Studio 2015\Projects\commitToLove\obj\Debug\ClassLibrary.dll
-D:\Users\sdivito\Documents\Visual Studio 2015\Projects\commitToLove\obj\Debug\ClassLibrary.pdb
