@@ -102,6 +102,7 @@
     <None Include="css\fonts\adios_script_pro_all-webfont.woff2" />
     <None Include="en\sendEmail.php" />
     <None Include="it\sendEmail.php" />
+    <Content Include="it\our_story.html" />
     <Content Include="it\rsvp.html" />
     <Content Include="it\menu_otherPages.html" />
     <Content Include="it\gift.html" />
