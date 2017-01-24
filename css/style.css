@@ -543,7 +543,8 @@ img.with-border{
 	list-style-type:none;
 	padding:0;
 	text-align:left;
-	border-top:solid 3px #f7846b
+	border-top:solid 3px #f7846b;
+    top: 37px; 
 }
 
 #nav-menu li:hover > ul{

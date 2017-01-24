@@ -243,7 +243,7 @@ $(document).ready(function() {
 					}
 				
 				}, {
-  					offset:'-100%'
+  					offset:'-145px'
 				});
 			}
 			
