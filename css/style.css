@@ -1081,7 +1081,7 @@ img.with-border{
 }
 
 #the-date{
-	font-size:62px;
+	font-size:75px;
 }
 
 #date{
@@ -2510,7 +2510,7 @@ form .has-error .btn-primary{
 #counting-down{
 	text-align:center; 
 	color:#FFF; 
-	font-family: 'Pacifico';
+	font-family: 'Adios', cursive;
 	-ms-transform: rotate(-10deg); 
 	-webkit-transform: rotate(-10deg); 
 	transform: rotate(-10deg);
@@ -2521,11 +2521,11 @@ form .has-error .btn-primary{
 
 #counting{
 	font-size:65px; 
-	line-height:50px
+	line-height:65px
 }
 
 #down{
-	font-size:55px; 
+	font-size:65px; 
 	line-height:65px;
 }
 
@@ -2587,7 +2587,7 @@ footer .image-divider.fixed-height{
 #thank-you{
 	text-align:center; 
 	color:#FFF; 
-	font-family: 'Pacifico';
+	font-family: 'Adios', cursive;
 	-ms-transform: rotate(-10deg); 
 	-webkit-transform: rotate(-10deg); 
 	transform: rotate(-10deg);
@@ -2597,8 +2597,8 @@ footer .image-divider.fixed-height{
 }
 
 #thank{
-	font-size:55px; 
-	line-height:45px
+	font-size:65px; 
+	line-height:65px
 }
 
 #you{
