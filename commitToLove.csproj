@@ -96,6 +96,7 @@
     <Content Include="images\the-wedding-4a.jpg" />
     <Content Include="index.html" />
     <Content Include="index_old.html" />
+    <Content Include="it\gift - Copy.html" />
     <Content Include="it\location.html" />
     <Content Include="it\church.html" />
     <None Include="css\fonts\adios_script_pro_all-webfont.woff" />
