@@ -7,6 +7,7 @@
 	$email_from = $_POST['inputemail']; // required
 	$attending = $_POST['attending']; // not required
     $guest = $_POST['guest']; // required
+	$altro = $_POST['altro'];
 	
 	//echo '<script>console.log("'.$first_name.'")</script>';
 	
@@ -24,6 +25,7 @@
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Attending: ".clean_string($attending)."\n";
     $email_message .= "Guest: ".clean_string($guest)."\n";
+	$email_message .= "Altro: ".clean_string($altro)."\n";
 	
 	// create email headers
 	$headers = 'From: '.$email_from."\r\n".
