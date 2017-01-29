@@ -1,15 +1,21 @@
 ﻿<?
 	// EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "postmaster@sacommittolove.com";
-    $email_subject = "Your email subject line";
-		
+    $email_subject = "Matrimonio";
+		echo '<script>console.log("a")</script>';
+
 	$first_name = $_POST['inputname']; // required
 	$email_from = $_POST['inputemail']; // required
 	$attending = $_POST['attending']; // not required
     $guest = $_POST['guest']; // required
 	$altro = $_POST['altro'];
+
+	echo '<script>console.log("'.$first_name.'")</script>';
+	if(empty($first_name) || empty($email_from)) 
+    { 
+        echo '<script> alert ("Please go back and fill in all required lines"); window.history.back()</script>';
+    }
 	
-	//echo '<script>console.log("'.$first_name.'")</script>';
 	
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -31,6 +37,8 @@
 	$headers = 'From: '.$email_from."\r\n".
 	@mail($email_to, $email_subject, $email_message, $headers);  
 	
+	echo '<script type="text/javascript"> alert ("Thankyou") </script>';
+
 	$referer = $_SERVER['HTTP_REFERER'];
 	header("Location: $referer");
 	exit;

@@ -484,6 +484,7 @@ img.with-border{
 	display:inline;	
 }
 
+/*
 #nav-menu > li:before{
   	font-family: "fontello";
   	font-style: normal;
@@ -492,7 +493,9 @@ img.with-border{
 	content: '\e9bd';
 	color:#f7846b;
 	text-align:center;
+
 }
+    */
 
 #nav-menu > li.first-child:before{
 	content: "";
