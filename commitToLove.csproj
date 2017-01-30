@@ -57,6 +57,7 @@
     <Content Include="en\location.html" />
     <Content Include="en\menu_index.html" />
     <Content Include="en\menu_otherPages.html" />
+    <Content Include="en\our_story.html" />
     <Content Include="en\rsvp.html" />
     <Content Include="images\accomodation.jpg" />
     <Content Include="images\chiesa.jpg" />
