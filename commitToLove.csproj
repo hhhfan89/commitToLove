@@ -55,6 +55,7 @@
     <Content Include="en\gift.html" />
     <Content Include="en\index.html" />
     <Content Include="en\location.html" />
+    <Content Include="en\menu_index.html" />
     <Content Include="en\menu_otherPages.html" />
     <Content Include="en\rsvp.html" />
     <Content Include="images\accomodation.jpg" />
