@@ -5,7 +5,6 @@
     <meta name="ROBOTS" content="NOINDEX">
     <title>Stefano & Angeni commit to love!</title>
 
-    <link rel="icon" href="../images/favicon.jpg">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
     <!-- Pace -->
@@ -370,7 +369,7 @@
     </section> <!--END of CONTENT SECTION-->
     <!-- FOOTER SECTION -->
     <footer id="footer" style="background-color:#f7846b !important;">
-        <div class="image-divider fixed-height" style="background-image:url(images/footer-image-5.jpg); height:400px" data-stellar-background-ratio="0.5">
+        <div class="image-divider fixed-height" style="height:400px" data-stellar-background-ratio="0.5">
 
             <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
             <div class="alignment">
@@ -462,9 +461,16 @@
     <script type="text/javascript" src="../js/main-slider-fade.js"></script>
 
     <script type="text/javascript">
-             $(function () {
-                 $("#nav-header").load("menu_otherPages.html");
-             });
+        $(document).ready(function () {
+            $("#nav-header").load("menu_otherPages.html?" + new Date().getTime(), associaClick)
+        });
+
+        function associaClick() {
+            $("#mobile-nav").click(function (e) {
+                e.preventDefault()
+                $("#nav-menu").toggleClass("open");
+            });
+        }
     </script>
 
 </body>

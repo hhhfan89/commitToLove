@@ -4,7 +4,6 @@
         <meta name="ROBOTS" content="NOINDEX">
       	<title>Stefano & Angeni commit to love!</title>
         
-        <link rel="icon" href="images/favicon.jpg">
         <!-- Bootstrap -->
     	<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
         <!-- Pace -->
@@ -227,9 +226,16 @@
         <script type="text/javascript" src="../js/main-slider-fade.js"></script>
         
         <script type="text/javascript">
-            $(function () {
-                $("#nav-header").load("menu_rsvp.html");
+            $(document).ready(function () {
+                $("#nav-header").load("menu_rsvp.html?" + new Date().getTime(), associaClick)
             });
+
+            function associaClick() {
+                $("#mobile-nav").click(function (e) {
+                    e.preventDefault()
+                    $("#nav-menu").toggleClass("open");
+                });
+            }
         </script>
 	
 </body></html>
