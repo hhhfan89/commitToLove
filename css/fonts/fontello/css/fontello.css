@@ -188,7 +188,7 @@
 .de-icon-phone:before { content: '\e87a'; } /* '' */
 .de-icon-phone-squared:before { content: '\e87b'; } /* '' */
 .de-icon-fax:before { content: '\e87c'; } /* '' */
-.de-icon-menu:before { content: '\f0c9'; } /* '' */\e801
+.de-icon-menu:before { content: '\f0c9'; } /* '' \e801*/
 .de-icon-cog:before { content: '\e87e'; } /* '' */
 .de-icon-cog-alt:before { content: '\e87f'; } /* '' */
 .de-icon-wrench:before { content: '\e880'; } /* '' */
