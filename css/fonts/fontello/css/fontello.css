@@ -1,10 +1,23 @@
-@font-face {
+
+/*@font-face {
   font-family: 'fontello';
   src: url('../font/fontello.eot?32012614');
   src: url('../font/fontello.eot?32012614#iefix') format('embedded-opentype'),
        url('../font/fontello.woff?32012614') format('woff'),
        url('../font/fontello.ttf?32012614') format('truetype'),
        url('../font/fontello.svg?32012614#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?4656379');
+  src: url('../font/fontello.eot?4656379#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?4656379') format('woff2'),
+       url('../font/fontello.woff?4656379') format('woff'),
+       url('../font/fontello.ttf?4656379') format('truetype'),
+       url('../font/fontello.svg?4656379#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -175,7 +188,7 @@
 .de-icon-phone:before { content: '\e87a'; } /* '' */
 .de-icon-phone-squared:before { content: '\e87b'; } /* '' */
 .de-icon-fax:before { content: '\e87c'; } /* '' */
-.de-icon-menu:before { content: '\e87d'; } /* '' */
+.de-icon-menu:before { content: '\f0c9'; } /* '' */\e801
 .de-icon-cog:before { content: '\e87e'; } /* '' */
 .de-icon-cog-alt:before { content: '\e87f'; } /* '' */
 .de-icon-wrench:before { content: '\e880'; } /* '' */
