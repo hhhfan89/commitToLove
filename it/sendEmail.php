@@ -40,7 +40,7 @@
 	echo '<script type="text/javascript"> alert ("Thankyou") </script>';
 
 	$referer = $_SERVER['HTTP_REFERER'];
-	header("Location: $referer");
+	header("Location: gift.html?message=ok");
 	exit;
 
 ?>

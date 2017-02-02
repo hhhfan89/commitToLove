@@ -81,7 +81,7 @@
                     <div class="rsvp-wrapper">
                         <div class="form-group">
     						<label for="inputname">NOME E COGNOME</label>
-    						<input name="inputname" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name" type="text" value="">
+    						<input required name="inputname" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name" type="text" value="">
  						</div>                        
                         <div class="form-group">
     						<label for="inputemail">EMAIL</label>
@@ -225,6 +225,9 @@
         <!-- Custom Additional Script -->
         <script type="text/javascript" src="../js/main-slider-fade.js"></script>
         
+        <script type="text/javascript" src="../js/jquery-validator/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-validator/localization/messages_it.js"></script>
+
         <script type="text/javascript">
             $(document).ready(function () {
                 $("#nav-header").load("menu_rsvp.html?" + new Date().getTime(), associaClick)
@@ -236,6 +239,11 @@
                     $("#nav-menu").toggleClass("open");
                 });
             }
+
+            $("#rsvpform").validate({
+                lang: 'it'
+            });
+        
         </script>
 	
 </body></html>
