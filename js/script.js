@@ -346,11 +346,13 @@ $(document).ready(function() {
 		 
 	// 08. MOBILE MENU
 	//==================================================================================
-	$("#mobile-nav").click(function(e){
+    /*
+	$("#mobile-nav").click(function (e) {
 		e.preventDefault()
 		$("#nav-menu").toggleClass("open");
 	});
-	
+	*/
+
 	// Hide Menu After Click It. Will be used on onepage version. 
 	$("#nav-menu li a").click(function(){
 		 if ($(this).attr("href") !== "#") {

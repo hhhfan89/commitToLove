@@ -122,6 +122,10 @@
     <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="js\jquery-doubletaptogo\jquery.dcd.doubletaptogo.js" />
     <Content Include="js\jquery-ui-widget\jquery.ui.widget.js" />
+    <Content Include="js\jquery-validator\additional-methods.js" />
+    <Content Include="js\jquery-validator\additional-methods.min.js" />
+    <Content Include="js\jquery-validator\jquery.validate.js" />
+    <Content Include="js\jquery-validator\jquery.validate.min.js" />
     <Content Include="js\magnific-popup\jquery.magnific-popup.js" />
     <Content Include="js\main-slider-fade.js" />
     <Content Include="js\masonry\masonry.pkgd.min.js" />
@@ -243,6 +247,7 @@
     <Folder Include=".git\objects\info\" />
     <Folder Include=".git\objects\pack\" />
     <Folder Include=".git\refs\tags\" />
+    <Folder Include="js\jquery-validator\localization\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
