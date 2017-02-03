@@ -452,9 +452,16 @@
     <script type="text/javascript" src="../js/main-slider-fade.js"></script>
 
     <script type="text/javascript">
-        $(function () {
-            $("#nav-header").load("menu_otherPages.html");
+        $(document).ready(function () {
+            $("#nav-header").load("menu_otherPages.html?" + new Date().getTime(), associaClick)
         });
+
+        function associaClick() {
+            $("#mobile-nav").click(function (e) {
+                e.preventDefault()
+                $("#nav-menu").toggleClass("open");
+            });
+        }
     </script>
 
 </body>

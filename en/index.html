@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="utf-8">
@@ -570,7 +570,6 @@
     <script src="../js/countdown/jquery.plugin.js"></script>
     <script src="../js/countdown/jquery.countdown.js"></script>
     <!-- Countdown Labels / Localisation -->
-    <script src="../js/countdown/jquery.countdown-custom-label.js"></script>
     <!-- Magnific Popup -->
     <script src="../js/magnific-popup/jquery.magnific-popup.js"></script>
     <!-- Owl Carousel -->
@@ -590,9 +589,19 @@
         var theday = new Date();
         theday = new Date(2017, 3, 30, 10, 30, 0, 0);
         $('#countdown').countdown({ until: theday, format: 'DHMS' });
-        $('#countdown').countdown($.countdown.regionalOptions['it']);
-
         $('#date-countdown').countdown({ until: theday, format: 'DHMS' });
+
+        $(document).ready(function () {
+            $("#nav-wrapper").load("menu_index.html?" + new Date().getTime(), associaClick)
+        });
+
+        function associaClick() {
+            $("#mobile-nav").click(function (e) {
+                e.preventDefault()
+                $("#nav-menu").toggleClass("open");
+            });
+        }
+
     </script>
 </body>
 </html>
