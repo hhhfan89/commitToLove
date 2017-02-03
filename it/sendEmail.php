@@ -4,8 +4,8 @@
     $email_subject = "Matrimonio";
 		echo '<script>console.log("a")</script>';
 
-	$first_name = $_POST['inputname']; // required
-	$email_from = $_POST['inputemail']; // required
+	$first_name = $_POST['name']; // required
+	$email_from = $_POST['email']; // required
 	$attending = $_POST['attending']; // not required
     $guest = $_POST['guest']; // required
 	$altro = $_POST['altro'];
@@ -40,7 +40,7 @@
 	echo '<script type="text/javascript"> alert ("Thankyou") </script>';
 
 	$referer = $_SERVER['HTTP_REFERER'];
-	header("Location: gift.html?message=ok");
+	header("Location: rsvp.html?message=ok");
 	exit;
 
 ?>

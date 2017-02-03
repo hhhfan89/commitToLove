@@ -58,7 +58,7 @@
         
         	<!-- CONTAINER -->
 			<div class="container">
-                <form method="post" action="sendEmail.php" id="rsvpform" enctype="multipart/form-data">
+                <form method="post" action="http://localhost/sacommittolove/sendEmail.php" id="rsvpform" enctype="multipart/form-data">
                 <!--TEXT SECTION-->
                 <div class="row">
                 	<div id="message" class="col-md-offset-1 col-md-10 message">
@@ -80,22 +80,22 @@
                     <div class="col-md-5">
                     <div class="rsvp-wrapper">
                         <div class="form-group">
-    						<label for="inputname">NOME E COGNOME</label>
-    						<input required name="inputname" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name" type="text" value="">
+    						<label for="name">NOME E COGNOME</label>
+    						<input name="name" class="form-control ajax-input" id="name" placeholder="" data-required="Name Required" data-output-label="Output Name" type="text" value="">
  						</div>                        
                         <div class="form-group">
-    						<label for="inputemail">EMAIL</label>
-    						<input name="inputemail" class="form-control ajax-input" id="inputemail" placeholder="" data-required="Email Required" data-output-label="Output Email" type="email" value="">
+    						<label for="email">EMAIL</label>
+    						<input name="email" class="form-control ajax-input" id="email" placeholder="" data-required="Email Required" data-output-label="Output Email" type="email" value="">
  						</div>   
                     
                         <div class="form-group">
                            	<label>PARTECIPERAI?</label>
                            	<div id="events-radio" class="ajax-input ajax-radio" data-required="Are you Attending?" data-output-label="Attending">
                             	<div data-toggle="buttons">
-  									<label class="btn btn-primary no-icon">
+  									<label for="attending" id="buttonAccept" class="btn btn-primary no-icon">
     									<input name="attending" id="accept" value="Accept with Pleasure" type="radio"> Si, ci sarò!
   									</label>
-                               		<label class="btn btn-primary no-icon">
+                               		<label for="attending" id="buttonDecline" class="btn btn-primary no-icon">
     									<input name="attending" id="decline" value="Decline with Regrets" type="radio"> No, mi dispiace..   
   									</label>
                                 </div>
@@ -106,19 +106,19 @@
                            	<label>NUMERO DEGLI INVITATI (te compreso)</label>
                            	<div id="guest-radio" class="ajax-input ajax-radio" data-required="How many Guest?" data-output-label="Number of Guest">
                             	<div data-toggle="buttons">
-  									<label class="btn btn-primary no-icon">
+  									<label id="guest1" class="btn btn-primary no-icon">
     									<input name="guest" id="1" value="1" type="radio"> 1
   									</label>
-                               		<label class="btn btn-primary no-icon">
+                               		<label id="guest2" class="btn btn-primary no-icon">
     									<input name="guest" id="2" value="2" type="radio">2
   									</label>
-                                    <label class="btn btn-primary no-icon">
+                                    <label id="guest3" class="btn btn-primary no-icon">
     									<input name="guest" id="3" value="3" type="radio">3
   									</label>
-                                    <label class="btn btn-primary no-icon">
+                                    <label id="guest4" class="btn btn-primary no-icon">
     									<input name="guest" id="4" value="4" type="radio">4
   									</label>
-                                    <label class="btn btn-primary no-icon">
+                                    <label id="guest5" class="btn btn-primary no-icon">
     									<input name="guest" id="5" value="5" type="radio">5
   									</label>
                                 </div>
@@ -133,7 +133,7 @@
                         
                         
                         <div class="form-group">
-    						<input id="submitButton" name="submitButton" class="button medium reverse" value="INVIA" type="submit">
+    						<input id="submitButton" name="submitButton" onclick="return validateRadioButtons();" class="button medium reverse" value="INVIA" type="submit">
  						</div> 
                     </div>
                     </div>
@@ -230,8 +230,46 @@
 
         <script type="text/javascript">
             $(document).ready(function () {
-                $("#nav-header").load("menu_rsvp.html?" + new Date().getTime(), associaClick)
+                $("#nav-header").load("menu_rsvp.html?" + new Date().getTime(), associaClick);
+                params = getParams();
+
+                var myVal = params['message'];
+
+                if (myVal == "ok") {
+                    alert("Grazie per il messaggio!");
+                } 
+                if (myVal == "ko") {
+                    alert("Errore nell'invio email, per favore riprova");
+                }
+
+
+                // Controllo radio
+                
             });
+
+            function validateRadioButtons() {
+                var attending = false;
+                if ($("#buttonAccept").hasClass("active") || $("#buttonDecline").hasClass("active")) {
+                    attending = true;
+                }
+
+                var guest = false;
+                if ($("#guest1").hasClass("active") || $("#guest2").hasClass("active") || $("#guest3").hasClass("active") || $("#guest4").hasClass("active")
+                    || $("#guest5").hasClass("active")) {
+                    guest = true;
+                }
+
+                if (!attending) {
+                    alert('Non ci hai fatto sapere se vieni..');
+                    return false;
+                }
+                if (!guest) {
+                    return alert('Quanti sarete..?');
+                    return false;
+                }
+                return true;
+
+            }
 
             function associaClick() {
                 $("#mobile-nav").click(function (e) {
@@ -240,8 +278,35 @@
                 });
             }
 
+            function getParams() {
+                var idx = document.URL.indexOf('?');
+                var params = {};
+                if (idx != -1) {
+                    var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+                    for (var i = 0; i < pairs.length; i++) {
+                        nameVal = pairs[i].split('=');
+                        params[nameVal[0]] = nameVal[1];
+                    }
+                }
+                return params;
+            }
+
             $("#rsvpform").validate({
-                lang: 'it'
+                lang: 'it',
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    name: "Inserisci nome e cognome",
+                    email: "Inserisci un'email",
+                   
+                }
             });
         
         </script>
