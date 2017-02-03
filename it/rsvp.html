@@ -93,10 +93,10 @@
                            	<div id="events-radio" class="ajax-input ajax-radio" data-required="Are you Attending?" data-output-label="Attending">
                             	<div data-toggle="buttons">
   									<label for="attending" id="buttonAccept" class="btn btn-primary no-icon">
-    									<input name="attending" id="accept" value="Accept with Pleasure" type="radio"> Si, ci sarò!
+    									<input name="attending" id="accept" value="Si, ci sarò!" type="radio"> Si, ci sarò!
   									</label>
                                		<label for="attending" id="buttonDecline" class="btn btn-primary no-icon">
-    									<input name="attending" id="decline" value="Decline with Regrets" type="radio"> No, mi dispiace..   
+    									<input name="attending" id="decline" value="No, mi dispiace" type="radio"> No, mi dispiace..   
   									</label>
                                 </div>
 							</div> 
@@ -242,8 +242,21 @@
                     alert("Errore nell'invio email, per favore riprova");
                 }
 
+                $("#buttonDecline").click(function (e) {
+                    $('label[id=guest1]').addClass("disabled").removeClass("active");
+                    $('label[id=guest2]').addClass("disabled").removeClass("active");
+                    $('label[id=guest3]').addClass("disabled").removeClass("active");
+                    $('label[id=guest4]').addClass("disabled").removeClass("active");
+                    $('label[id=guest5]').addClass("disabled").removeClass("active");
+                });
 
-                // Controllo radio
+                $("#buttonAccept").click(function (e) {
+                    $('label[id=guest1]').removeClass("disabled");
+                    $('label[id=guest2]').removeClass("disabled");
+                    $('label[id=guest3]').removeClass("disabled");
+                    $('label[id=guest4]').removeClass("disabled");
+                    $('label[id=guest5]').removeClass("disabled");
+                });
                 
             });
 
@@ -254,8 +267,8 @@
                 }
 
                 var guest = false;
-                if ($("#guest1").hasClass("active") || $("#guest2").hasClass("active") || $("#guest3").hasClass("active") || $("#guest4").hasClass("active")
-                    || $("#guest5").hasClass("active")) {
+                if ($("#buttonDecline").hasClass("active") || ($("#guest1").hasClass("active") || $("#guest2").hasClass("active") || $("#guest3").hasClass("active") || $("#guest4").hasClass("active")
+                    || $("#guest5").hasClass("active"))) {
                     guest = true;
                 }
 
