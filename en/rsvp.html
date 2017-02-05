@@ -4,7 +4,6 @@
         <meta name="ROBOTS" content="NOINDEX">
       	<title>Stefano & Angeni commit to love!</title>
         
-        <link rel="icon" href="images/favicon.jpg">
         <!-- Bootstrap -->
     	<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css" media="screen">
         <!-- Pace -->
@@ -26,7 +25,6 @@
         <!-- Font -->
         <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
         
         <!-- Theme CSS -->
     	<link href="../css/style.css" rel="stylesheet" media="screen">
@@ -44,49 +42,18 @@
 </div>
 <div class="pace-activity"></div></div>
     	<!--PRELOADER-->
-        <div id="preloader" style="display: none;">
-        
-        	<div class="alignment">
-            	<div class="v-align center-middle"> 
-            		
-                    <!-- LEFT HEART -->
-            		<div class="heart-animation">                	
-            			<i class="de-icon-heart"></i>
-               	 	</div>
-                
-                	<!-- RIGHT HEART -->
-                	<div class="heart-animation-reverse">
-            			<i class="de-icon-heart"></i>
-                	</div>     
-                     
-                </div>
-            </div>
-            
-        </div> <!--END of PRELOADER-->
         
         
        
         
         <!-- NAVIGATION -->   
-    	<header id="nav-header">
-        	<nav id="nav-bar" class="top-bar fluid-width block-color nav-center sticky-nav animation fadeInDown stick-it animated fadeInDownBig" style="visibility: visible;">
-            	
-                <!-- Qui viene iniettato il menu a runtime, con jQuery -->
-                <div id="nav-wrapper"></div>
-                
-            </nav>
+    	<header id="nav-header" style="background-color:aqua;">
+        	
         </header> <!-- END of NAVIGATION -->
         
         
         <!--CONTENT SECTION-->
         <section id="content" style="padding: 200px 0;">
-        
-        	<!-- ICON -->
-        	<div class="icon-title">
-           		<div class="de-icon circle light large-size aligncenter">
-					<i class="de-icon-mail-2"></i>
- 				</div>
-			</div>
         
         	<!-- CONTAINER -->
 			<div class="container">
@@ -99,58 +66,58 @@
                 </div>
                 <div class="row">
                 	<div class="col-md-offset-1 col-md-5">
-                    	<h3 style="margin-top:3px;">PER FAVORE, RISPONDI ENTRO IL 30 MARZO!</h3>  
-                        <p>Gentile inviato/a, ti invitiamo a compilare il form qui di fianco per confermarci o meno la tua partecipazione.</p>           
-                        <p style="margin-bottom: 10px!important;">Nel box "Altro" puoi specificare le tue esigenze, quali ad esempio:</p>
+                    	<h3 style="margin-top:3px;">PLEASE LET US KNOW ON ON BEFORE THE 30TH OF MARCH!</h3>  
+                        <p>We invite you to fill up this form to confirm whether you will be joining us or not.</p>           
+                        <p style="margin-bottom: 10px!important;">In the "Others" box you may tell us if you have specific needs such as:</p>
                              <ul>
-                                 <li>intolleranze alimentari/preferenze sul menu;</li>
-                                 <li>necessità di soggiornare la notte dopo l'evento;</li>
+                                 <li>food intolerance;</li>
+                                 <li>hotel recommendations;</li>
                              </ul> 
-                        <p>Faremo tutto il possibile per aiutarti.</p>           
-                        <p>Ti ringraziamo!</p>
+                        <p>We will do our best to help you.</p>           
+                        <p>Thank you very much!</p>
                     </div>
                     <div class="col-md-5">
                     <div class="rsvp-wrapper">
                         <div class="form-group">
-    						<label for="inputname">NOME E COGNOME</label>
-    						<input name="inputname" class="form-control ajax-input" id="inputname" placeholder="" data-required="Name Required" data-output-label="Output Name" type="text" value="">
+    						<label for="name">NAME AND SURNAME</label>
+    						<input name="name" class="form-control ajax-input" id="name" placeholder="" data-required="Name Required" data-output-label="Output Name" type="text" value="">
  						</div>                        
                         <div class="form-group">
-    						<label for="inputemail">EMAIL</label>
-    						<input name="inputemail" class="form-control ajax-input" id="inputemail" placeholder="" data-required="Email Required" data-output-label="Output Email" type="email" value="">
+    						<label for="email">EMAIL</label>
+    						<input name="email" class="form-control ajax-input" id="email" placeholder="" data-required="Email Required" data-output-label="Output Email" type="email" value="">
  						</div>   
                     
                         <div class="form-group">
-                           	<label>PARTECIPERAI?</label>
+                           	<label id="attendingLabel">WILL YOU COME?</label>
                            	<div id="events-radio" class="ajax-input ajax-radio" data-required="Are you Attending?" data-output-label="Attending">
                             	<div data-toggle="buttons">
-  									<label class="btn btn-primary no-icon">
-    									<input name="attending" id="accept" value="Accept with Pleasure" type="radio"> Si, ci sarò!
+  									<label for="attending" id="buttonAccept" class="btn btn-primary no-icon">
+    									<input name="attending" id="accept" value="Si, ci sarò!" type="radio"> Yes, I'll be there!
   									</label>
-                               		<label class="btn btn-primary no-icon">
-    									<input name="attending" id="decline" value="Decline with Regrets" type="radio"> No, mi dispiace..   
+                               		<label for="attending" id="buttonDecline" class="btn btn-primary no-icon">
+    									<input name="attending" id="decline" value="No, mi dispiace" type="radio"> No, I'm sorry..   
   									</label>
                                 </div>
 							</div> 
                       	</div> 
                         
                         <div class="form-group">
-                           	<label>NUMERO DEGLI INVITATI (te compreso)</label>
+                           	<label id="guestLabel">NUMBER OF GUESTS (including you)</label>
                            	<div id="guest-radio" class="ajax-input ajax-radio" data-required="How many Guest?" data-output-label="Number of Guest">
                             	<div data-toggle="buttons">
-  									<label class="btn btn-primary no-icon">
+  									<label id="guest1" class="btn btn-primary no-icon">
     									<input name="guest" id="1" value="1" type="radio"> 1
   									</label>
-                               		<label class="btn btn-primary no-icon">
+                               		<label id="guest2" class="btn btn-primary no-icon">
     									<input name="guest" id="2" value="2" type="radio">2
   									</label>
-                                    <label class="btn btn-primary no-icon">
+                                    <label id="guest3" class="btn btn-primary no-icon">
     									<input name="guest" id="3" value="3" type="radio">3
   									</label>
-                                    <label class="btn btn-primary no-icon">
+                                    <label id="guest4" class="btn btn-primary no-icon">
     									<input name="guest" id="4" value="4" type="radio">4
   									</label>
-                                    <label class="btn btn-primary no-icon">
+                                    <label id="guest5" class="btn btn-primary no-icon">
     									<input name="guest" id="5" value="5" type="radio">5
   									</label>
                                 </div>
@@ -158,14 +125,14 @@
                       	</div>
 
                         <div class="form-group">
-    						<label for="altro">ALTRO</label>
+    						<label for="altro">OTHERS</label>
                             <textarea name="altro"  class="form-control ajax-input" cols="40" rows="5"></textarea>
     						<!--<input  name="altro" class="form-control ajax-input" id="altro" placeholder=""  type="text" value="">-->
  						</div>
                         
                         
                         <div class="form-group">
-    						<input id="submitButton" name="submitButton" class="button medium reverse" value="SUBMIT" type="submit">
+    						<input id="submitButton" name="submitButton" onclick="return validateRadioButtons();" class="button medium reverse" value="SUBMIT" type="submit">
  						</div> 
                     </div>
                     </div>
@@ -178,17 +145,15 @@
         </section> <!--END of CONTENT SECTION-->        
         
         
-        <!-- FOOTER SECTION -->
+        <!-- FOOTER SECTION 
 		<footer>
             <div class="image-divider fixed-height" style="background-image: url(&quot;images/footer-image-6.jpg&quot;); height: 400px; background-attachment: fixed; background-position: 50% 438.5px;" data-stellar-background-ratio="0.5">
                 
                 <div class="divider-overlay"></div>
                     
-                <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
                 <div class="alignment"> 
                    	<div class="v-align center-middle">                  	
                     
-                    	<!-- HEART DIVIDER & COUPLE NAME -->
                     	<div class="container">                 	 
                     		<div class="row">
                         		<div class="col-md-12">
@@ -201,19 +166,18 @@
                         			</div>
                                     
 									<div id="footer-couple-name" class="animation delay1 fadeInUp animated" style="visibility: visible;">
-                                		GERRARD &amp; DIANNE
+                                		STEFANO &amp; ANGENI
                                 	</div>
                      
                      			</div>
                      		</div>
-                     	</div><!-- END of HEART DIVIDER & COUPLE NAME -->
-                     
+                     	</div>
                     </div>
-				</div><!-- END of Center Middle Alignment -->
-                    
+				</div>
 			</div>
-		</footer><!-- END of FOOTER SECTION -->
-            
+		</footer>
+        -->
+        
 		<!-- jQuery -->
     	<script src="../js/jquery-1.11.1.min.js"></script>
         <!-- Pace -->
@@ -260,10 +224,110 @@
         <!-- Custom Additional Script -->
         <script type="text/javascript" src="../js/main-slider-fade.js"></script>
         
+        <script type="text/javascript" src="../js/jquery-validator/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-validator/localization/messages_it.js"></script>
+
         <script type="text/javascript">
-            $(function () {
-                $("#nav-wrapper").load("menu_otherPages.html");
+            $(document).ready(function () {
+                $("#nav-header").load("menu_rsvp.html?" + new Date().getTime(), associaClick);
+                params = getParams();
+
+                var myVal = params['message'];
+
+                if (myVal == "ok") {
+                    alert("Grazie per il messaggio!");
+                }
+                if (myVal == "ko") {
+                    alert("Errore nell'invio email, per favore riprova");
+                }
+
+                $("#buttonDecline").click(function (e) {
+                    $('label[id=guest1]').addClass("disabled").removeClass("active");
+                    $('label[id=guest2]').addClass("disabled").removeClass("active");
+                    $('label[id=guest3]').addClass("disabled").removeClass("active");
+                    $('label[id=guest4]').addClass("disabled").removeClass("active");
+                    $('label[id=guest5]').addClass("disabled").removeClass("active");
+                });
+
+                $("#buttonAccept").click(function (e) {
+                    $('label[id=guest1]').removeClass("disabled");
+                    $('label[id=guest2]').removeClass("disabled");
+                    $('label[id=guest3]').removeClass("disabled");
+                    $('label[id=guest4]').removeClass("disabled");
+                    $('label[id=guest5]').removeClass("disabled");
+                });
+
             });
+
+            function validateRadioButtons() {
+                var attending = false;
+                if ($("#buttonAccept").hasClass("active") || $("#buttonDecline").hasClass("active")) {
+                    attending = true;
+                }
+
+                var guest = false;
+                if ($("#buttonDecline").hasClass("active") || ($("#guest1").hasClass("active") || $("#guest2").hasClass("active") || $("#guest3").hasClass("active") || $("#guest4").hasClass("active")
+                    || $("#guest5").hasClass("active"))) {
+                    guest = true;
+                }
+
+                if (!attending) {
+                    alert('Please tell us if you are coming..');
+                    $('html, body').animate({
+                        scrollTop: $("#attendingLabel").offset().top
+                    }, 1500);
+                    //$.scrollTo($("#events-radio"), { duration: 0 })
+                    return false;
+                }
+                if (!guest) {
+                    alert('Please tell us the number of guests..?');
+                    $('html, body').animate({
+                        scrollTop: $("#guestLabel").offset().top
+                    }, 1500);
+                    return false;
+                }
+                return true;
+
+            }
+
+            function associaClick() {
+                $("#mobile-nav").click(function (e) {
+                    e.preventDefault()
+                    $("#nav-menu").toggleClass("open");
+                });
+            }
+
+            function getParams() {
+                var idx = document.URL.indexOf('?');
+                var params = {};
+                if (idx != -1) {
+                    var pairs = document.URL.substring(idx + 1, document.URL.length).split('&');
+                    for (var i = 0; i < pairs.length; i++) {
+                        nameVal = pairs[i].split('=');
+                        params[nameVal[0]] = nameVal[1];
+                    }
+                }
+                return params;
+            }
+
+            $("#rsvpform").validate({
+                lang: 'it',
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    name: "Enter your name and surname",
+                    email: "Enter your email",
+
+                }
+            });
+
         </script>
 	
 </body></html>
